@@ -1,0 +1,19 @@
+version: '3'
+services:
+  database:
+    image: 'mongo:latest'
+    container_name: 'nest-mongo'
+    environment:
+      - MONGO_INITDB_DATABASE=api_commerce
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    ports:
+      - '27017:27017'
+    expose:
+      - '27017'
+    volumes:
+      - mongodb-commerce:/data/db
+
+volumes:
+  mongodb-commerce:
+    

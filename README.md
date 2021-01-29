@@ -31,3 +31,9 @@ E-Ccommercce web api
 - NoSQL Database, probably MongoDB
 - Explore Testing
 - Explore Deployments / DevOps
+
+## Dependency
+```bash
+npm i @nestjs/mongoose mongoose
+npm i -D @types/mongoose
+```
